@@ -209,7 +209,8 @@ class App extends Component {
     localVideo = document.getElementById('localVideo');
     remoteVideo = document.getElementById('remoteVideo');
     database.ref('waiting').once('value').then(searchCandidates);
-    //setTimeout((() => new Audio('foo.mp3').play()), 1000);
+ 
+//     setTimeout(() => new Audio(smb).play(), 1000);
   }
   render() {
     return (
