@@ -1,0 +1,61 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+body {
+  font-family: sans-serif;
+  margin:0px;
+  padding:0px;
+}
+
+video {
+  filter: hue-rotate(180deg) saturate(200%);
+  -moz-filter: hue-rotate(180deg) saturate(200%);
+  -webkit-filter: hue-rotate(180deg) saturate(200%);
+  
+  padding:0px;
+  max-height:50vh;
+  display:block;
+  margin-right: auto; margin-left: auto;
+  margin:0px;
+}
+
+div {
+  background-position: center; 
+  height: 100vh;
+  width:100vw;
+  margin:0px;
+  padding:0px;
+  background-color: black;
+  background-image: url("psych.jpg");
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+
+}
