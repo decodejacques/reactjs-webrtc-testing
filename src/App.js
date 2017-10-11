@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import firebase from 'firebase';
 import 'webrtc-adapter';
+import smb from './smb_stage_clear.wav'
 var remoteSet = false;
 var iceBacklog = [];
 
@@ -209,7 +210,7 @@ class App extends Component {
     localVideo = document.getElementById('localVideo');
     remoteVideo = document.getElementById('remoteVideo');
     database.ref('waiting').once('value').then(searchCandidates);
- 
+    new Audio(smb).play();
 //     setTimeout(() => new Audio(smb).play(), 1000);
   }
   render() {
